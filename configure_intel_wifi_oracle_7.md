@@ -1,12 +1,4 @@
-I have this intel wifi card and the drivers are not supported by Intel only on kernels 4.6 + . With the 4.6 kernel, my lenvo yoga is doing real yoga
-
-```
-00:1f.6 Ethernet controller: Intel Corporation Ethernet Connection (4) I219-LM (rev 21)
-04:00.0 Network controller: Intel Corporation Wireless 8265 / 8275 (rev 88)
-
-```
-
-#### here is what I did to fix wifi. ( before you start, make sure you have the updated gcc and kernel header package installed) 
+I have the latest and greatest intel wifi card and they are supported by Intel only on kernels 4.6 + . My lenvo yoga is doing real yoga when i update to latest kernel. So, here is what I did to fix wifi. ( before you start, make sure you have the updated gcc and kernel header package installed) 
 
 ```
 wget https://mirrors.edge.kernel.org/pub/linux/kernel/projects/backports/stable/v4.20-rc5/backports-4.20-rc5-1.tar.gz
