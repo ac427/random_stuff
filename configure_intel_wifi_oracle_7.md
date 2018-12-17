@@ -6,16 +6,11 @@ I have this intel wifi card and the drivers are not supported by Intel only on k
 
 ```
 
-##### here is what I did to fix 
-
-* install all the dependent packages to compile 
-
+#### here is what I did to fix wifi. ( before you start, make sure you have the updated gcc and kernel header package installed) 
 
 ```
 wget https://mirrors.edge.kernel.org/pub/linux/kernel/projects/backports/stable/v4.20-rc5/backports-4.20-rc5-1.tar.gz
 ## untar it 
-
-```
 [root@andover backports-4.20-rc5-1]#  make defconfig-wifi
 cc -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer   -c -o conf.o conf.c
 cc -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer   -c -o zconf.tab.o zconf.tab.c
